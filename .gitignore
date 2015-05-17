@@ -6,10 +6,11 @@
 *.exe
 *.o
 *.so
-*.pyc
+*.py[cod]
+__pycache__/
 
-# Packages #
-############
+# Packages & packaging #
+########################
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
@@ -20,6 +21,35 @@
 *.rar
 *.tar
 *.zip
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit tests #
+##############
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
 
 # Logs and databases #
 ######################
@@ -38,8 +68,12 @@ ehthumbs.db
 Thumbs.db
 
 # appkey and temp data #
-####################################
+########################
 spotify_appkey.key
 *.mp3
 tmp/*
 *~
+
+# PyCharm #
+###########
+.idea/
